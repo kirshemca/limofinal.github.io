@@ -1,0 +1,575 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A9DC681-F109-4097-B21D-BD3552A33E39}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LimoFinal</RootNamespace>
+    <AssemblyName>LimoFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44369</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\Main.css" />
+    <Content Include="images\404.jpg" />
+    <Content Include="images\aalborg.jpg" />
+    <Content Include="images\aarhus.jpg" />
+    <Content Include="images\abu-dhabi-img1.jpg" />
+    <Content Include="images\abu-dhabi-img2.jpg" />
+    <Content Include="images\abu-dhabi-img3.jpg" />
+    <Content Include="images\abu-dhabi-img4.jpg" />
+    <Content Include="images\accounts.png" />
+    <Content Include="images\adelaide-banner.jpg" />
+    <Content Include="images\adelaide-img1.jpg" />
+    <Content Include="images\adelaide-img2.jpg" />
+    <Content Include="images\adelaide-img3.jpg" />
+    <Content Include="images\adelaide-img4.jpg" />
+    <Content Include="images\adelaide.jpg" />
+    <Content Include="images\airbus-report3.jpg" />
+    <Content Include="images\airport-transfer.png" />
+    <Content Include="images\airport-transfer2.png" />
+    <Content Include="images\AirportTransfer.png" />
+    <Content Include="images\Airport_Transfer.png" />
+    <Content Include="images\amsterdam.png" />
+    <Content Include="images\Amsterdam_2023.png" />
+    <Content Include="images\anthens-img1.jpg" />
+    <Content Include="images\anthens-img2.jpg" />
+    <Content Include="images\anthens-img3.jpg" />
+    <Content Include="images\anthens-img4.jpg" />
+    <Content Include="images\antwerp-img1.jpg" />
+    <Content Include="images\antwerp-img2.jpg" />
+    <Content Include="images\antwerp-img3.jpg" />
+    <Content Include="images\antwerp-img4.jpg" />
+    <Content Include="images\antwerp.jpg" />
+    <Content Include="images\api-integration.png" />
+    <Content Include="images\ar-flag.png" />
+    <Content Include="images\arrow-city.png" />
+    <Content Include="images\arrow_event.png" />
+    <Content Include="images\audi-q7.png" />
+    <Content Include="images\audi.png" />
+    <Content Include="images\avignon.jpg" />
+    <Content Include="images\baku.jpg" />
+    <Content Include="images\bangalore-img1.jpg" />
+    <Content Include="images\bangalore-img2.jpg" />
+    <Content Include="images\bangalore-img3.jpg" />
+    <Content Include="images\bangalore-img4.jpg" />
+    <Content Include="images\banner-img.jpg" />
+    <Content Include="images\banner.mp4" />
+    <Content Include="images\Barcelona.png" />
+    <Content Include="images\basel-img1.jpg" />
+    <Content Include="images\basel-img2.jpg" />
+    <Content Include="images\basel-img3.jpg" />
+    <Content Include="images\basel-img4.jpg" />
+    <Content Include="images\behrain.jpg" />
+    <Content Include="images\bergen_01.png" />
+    <Content Include="images\berlin-1.png" />
+    <Content Include="images\berlin-chauffer.png" />
+    <Content Include="images\berlin-img1.jpg" />
+    <Content Include="images\berlin-img2.jpg" />
+    <Content Include="images\berlin-img3.jpg" />
+    <Content Include="images\berlin-img4.jpg" />
+    <Content Include="images\berlin.png" />
+    <Content Include="images\billund.jpg" />
+    <Content Include="images\blog-header.jpg" />
+    <Content Include="images\blog-img1.jpg" />
+    <Content Include="images\bmw-7-series.png" />
+    <Content Include="images\bmw.png" />
+    <Content Include="images\booked-car.jpg" />
+    <Content Include="images\booking-car1.jpg" />
+    <Content Include="images\booking-car2.jpg" />
+    <Content Include="images\booking-car3.jpg" />
+    <Content Include="images\booking-car4.jpg" />
+    <Content Include="images\booking-car5.jpg" />
+    <Content Include="images\booking.png" />
+    <Content Include="images\booknow-btn.jpg" />
+    <Content Include="images\briefcase.png" />
+    <Content Include="images\brisbane-img1.jpg" />
+    <Content Include="images\brisbane-img2.jpg" />
+    <Content Include="images\brisbane-img3.jpg" />
+    <Content Include="images\brisbane-img4.jpg" />
+    <Content Include="images\brisbane.jpg" />
+    <Content Include="images\budapest-img1.jpg" />
+    <Content Include="images\budapest-img2.jpg" />
+    <Content Include="images\budapest-img3.jpg" />
+    <Content Include="images\budapest-img4.jpg" />
+    <Content Include="images\Budapest.png" />
+    <Content Include="images\BusinessTransfer.png" />
+    <Content Include="images\business_transfer.png" />
+    <Content Include="images\button-arrow.png" />
+    <Content Include="images\calender.png" />
+    <Content Include="images\cambodia.jpg" />
+    <Content Include="images\canberra-img1.jpg" />
+    <Content Include="images\canberra-img2.jpg" />
+    <Content Include="images\canberra-img3.jpg" />
+    <Content Include="images\canberra-img4.jpg" />
+    <Content Include="images\canberra.jpg" />
+    <Content Include="images\cancel-icon.png" />
+    <Content Include="images\cancel.png" />
+    <Content Include="images\car-bg1.png" />
+    <Content Include="images\car-black.png" />
+    <Content Include="images\car-colored.png" />
+    <Content Include="images\car-hire.png" />
+    <Content Include="images\car-hire2.png" />
+    <Content Include="images\car1.png" />
+    <Content Include="images\car1_wheel.png" />
+    <Content Include="images\car2.png" />
+    <Content Include="images\car2_wheel.png" />
+    <Content Include="images\card-grey.png" />
+    <Content Include="images\card.png" />
+    <Content Include="images\car_icon.png" />
+    <Content Include="images\Casablanca.png" />
+    <Content Include="images\children-seat.png" />
+    <Content Include="images\children-seat1.png" />
+    <Content Include="images\childrens.png" />
+    <Content Include="images\city-bg.png" />
+    <Content Include="images\city-line.png" />
+    <Content Include="images\city-line2.png" />
+    <Content Include="images\city-line3.png" />
+    <Content Include="images\city1-bg.png" />
+    <Content Include="images\city2-bg.png" />
+    <Content Include="images\clock.png" />
+    <Content Include="images\clock2.png" />
+    <Content Include="images\close-icon.png" />
+    <Content Include="images\close_icon.png" />
+    <Content Include="images\close_icon_white.png" />
+    <Content Include="images\coin01.png" />
+    <Content Include="images\coin02.png" />
+    <Content Include="images\coin03.png" />
+    <Content Include="images\coin04.png" />
+    <Content Include="images\coin05.png" />
+    <Content Include="images\coin06.png" />
+    <Content Include="images\coin07.png" />
+    <Content Include="images\coin08.png" />
+    <Content Include="images\coin09.png" />
+    <Content Include="images\coin10.png" />
+    <Content Include="images\coin11.png" />
+    <Content Include="images\colombo-img1.jpg" />
+    <Content Include="images\colombo-img2.jpg" />
+    <Content Include="images\colombo-img3.jpg" />
+    <Content Include="images\colombo-img4.jpg" />
+    <Content Include="images\congratulations.jpg" />
+    <Content Include="images\contact-banner.jpg" />
+    <Content Include="images\contact-whatsapp-icon.png" />
+    <Content Include="images\Copenhagen-Chauffeur.png" />
+    <Content Include="images\copenhagen.jpg" />
+    <Content Include="images\Copenhagen.png" />
+    <Content Include="images\copenhagen_01.png" />
+    <Content Include="images\COP_28_UAE.png" />
+    <Content Include="images\crytocurrency.jpg" />
+    <Content Include="images\customer-reviews-bg.jpg" />
+    <Content Include="images\dashboard-header.jpg" />
+    <Content Include="images\de-flag.png" />
+    <Content Include="images\destination.png" />
+    <Content Include="images\direction.png" />
+    <Content Include="images\dollar-icon.png" />
+    <Content Include="images\doller.png" />
+    <Content Include="images\driver_english.png" />
+    <Content Include="images\dropdown-arrow.png" />
+    <Content Include="images\dropdown-icon.png" />
+    <Content Include="images\Du.png" />
+    <Content Include="images\dubai-1.png" />
+    <Content Include="images\Dubai-Chauffeur.png" />
+    <Content Include="images\dubai-img1.jpg" />
+    <Content Include="images\dubai-img2.jpg" />
+    <Content Include="images\dubai-img3.jpg" />
+    <Content Include="images\dubai-img4.jpg" />
+    <Content Include="images\dubai.png" />
+    <Content Include="images\Dubai_Airshow.png" />
+    <Content Include="images\edit-icon.png" />
+    <Content Include="images\email-icon-white.png" />
+    <Content Include="images\email-icon.jpg" />
+    <Content Include="images\email-icon.png" />
+    <Content Include="images\email_icon.png" />
+    <Content Include="images\email_icon_white.png" />
+    <Content Include="images\en-flag.png" />
+    <Content Include="images\endtoend.png" />
+    <Content Include="images\endtoend2.png" />
+    <Content Include="images\eng_drvr.png" />
+    <Content Include="images\esbzerg.jpg" />
+    <Content Include="images\euro.png" />
+    <Content Include="images\euro.svg" />
+    <Content Include="images\Events.png" />
+    <Content Include="images\Event_and_Wedding.png" />
+    <Content Include="images\facebook-chat.jpg" />
+    <Content Include="images\faq-homeimg.jpg" />
+    <Content Include="images\faroe-island.jpg" />
+    <Content Include="images\feedback.png" />
+    <Content Include="images\fixed-price.png" />
+    <Content Include="images\fleet-car1.png" />
+    <Content Include="images\fleet-car2.png" />
+    <Content Include="images\fleet-car3.png" />
+    <Content Include="images\florence-img1.jpg" />
+    <Content Include="images\florence-img2.jpg" />
+    <Content Include="images\florence-img3.jpg" />
+    <Content Include="images\florence-img4.jpg" />
+    <Content Include="images\footer-logo.png" />
+    <Content Include="images\footer-whatsapp.jpg" />
+    <Content Include="images\frankfurt_01.png" />
+    <Content Include="images\free-cancellation.png" />
+    <Content Include="images\g-pay.jpg" />
+    <Content Include="images\gbp.png" />
+    <Content Include="images\german-flag.jpg" />
+    <Content Include="images\globe-black.png" />
+    <Content Include="images\globe-white.png" />
+    <Content Include="images\globe.png" />
+    <Content Include="images\google-play.png" />
+    <Content Include="images\google.png" />
+    <Content Include="images\Goolge.png" />
+    <Content Include="images\Grand_Prix_2023.png" />
+    <Content Include="images\hamberger-menu-icon.png" />
+    <Content Include="images\hamburg-img1.jpg" />
+    <Content Include="images\hamburg-img2.jpg" />
+    <Content Include="images\hamburg-img3.jpg" />
+    <Content Include="images\hamburg-img4.jpg" />
+    <Content Include="images\helsinki.jpg" />
+    <Content Include="images\hourly-booking.png" />
+    <Content Include="images\hourly-booking2.png" />
+    <Content Include="images\hours_icon.png" />
+    <Content Include="images\hyedrabad-img1.jpg" />
+    <Content Include="images\hyedrabad-img2.jpg" />
+    <Content Include="images\hyedrabad-img3.jpg" />
+    <Content Include="images\hyedrabad-img4.jpg" />
+    <Content Include="images\instagram.png" />
+    <Content Include="images\ivalo.jpg" />
+    <Content Include="images\jamaica.jpg" />
+    <Content Include="images\jeddah-img1.jpg" />
+    <Content Include="images\jeddah-img2.jpg" />
+    <Content Include="images\jeddah-img3.jpg" />
+    <Content Include="images\jeddah-img4.jpg" />
+    <Content Include="images\jeddah_01.png" />
+    <Content Include="images\joensuu.jpg" />
+    <Content Include="images\kittlia.jpg" />
+    <Content Include="images\kuopio.jpg" />
+    <Content Include="images\limo-banner-mob.jpg" />
+    <Content Include="images\limo-banner.jpg" />
+    <Content Include="images\limo-banner2.jpg" />
+    <Content Include="images\list-icon-white.png" />
+    <Content Include="images\list-icon.png" />
+    <Content Include="images\location-distance.png" />
+    <Content Include="images\location-duration.png" />
+    <Content Include="images\location-marker.png" />
+    <Content Include="images\location.png" />
+    <Content Include="images\logo-sm.png" />
+    <Content Include="images\logo-white.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo2.jpg" />
+    <Content Include="images\london-banner.jpg" />
+    <Content Include="images\london-img1.jpg" />
+    <Content Include="images\london-img2.jpg" />
+    <Content Include="images\london-img3.jpg" />
+    <Content Include="images\london-img4.jpg" />
+    <Content Include="images\london.png" />
+    <Content Include="images\lyon.jpg" />
+    <Content Include="images\m1.jpeg" />
+    <Content Include="images\m1.png" />
+    <Content Include="images\m10.jpeg" />
+    <Content Include="images\m11.jpeg" />
+    <Content Include="images\m11.png" />
+    <Content Include="images\m2.jpeg" />
+    <Content Include="images\m2.png" />
+    <Content Include="images\m3.jpg" />
+    <Content Include="images\m4.jpeg" />
+    <Content Include="images\m4.png" />
+    <Content Include="images\m5.jpeg" />
+    <Content Include="images\m5.png" />
+    <Content Include="images\m6.jpeg" />
+    <Content Include="images\m7.jpeg" />
+    <Content Include="images\m7.png" />
+    <Content Include="images\m8.jpeg" />
+    <Content Include="images\m8.jpg" />
+    <Content Include="images\m9.png" />
+    <Content Include="images\madrid-img1.jpg" />
+    <Content Include="images\madrid-img2.jpg" />
+    <Content Include="images\madrid-img3.jpg" />
+    <Content Include="images\madrid-img4.jpg" />
+    <Content Include="images\main-banner.jpg" />
+    <Content Include="images\manama.jpg" />
+    <Content Include="images\map.jpg" />
+    <Content Include="images\map.png" />
+    <Content Include="images\meet.png" />
+    <Content Include="images\melbourne.jpg" />
+    <Content Include="images\mercedes-cclass.png" />
+    <Content Include="images\mercedes-sclass.png" />
+    <Content Include="images\mercedes.png" />
+    <Content Include="images\mobile-app.png" />
+    <Content Include="images\mobilemenu_close_icon.png" />
+    <Content Include="images\mobile_banner_home.jpg" />
+    <Content Include="images\mobile_menu_dot.gif" />
+    <Content Include="images\mobile_menu_dot.png" />
+    <Content Include="images\motion-car1.png" />
+    <Content Include="images\motion-car2.png" />
+    <Content Include="images\mumbai-img1.jpg" />
+    <Content Include="images\mumbai-img2.jpg" />
+    <Content Include="images\mumbai-img3.jpg" />
+    <Content Include="images\mumbai-img4.jpg" />
+    <Content Include="images\name_icon.png" />
+    <Content Include="images\new-delhi-img1.jpg" />
+    <Content Include="images\new-delhi-img2.jpg" />
+    <Content Include="images\new-delhi-img3.jpg" />
+    <Content Include="images\new-delhi-img4.jpg" />
+    <Content Include="images\new-york-img1.jpg" />
+    <Content Include="images\new-york-img2.jpg" />
+    <Content Include="images\new-york-img3.jpg" />
+    <Content Include="images\new-york-img4.jpg" />
+    <Content Include="images\no-of-passengers.png" />
+    <Content Include="images\numdate_icon.png" />
+    <Content Include="images\nz.png" />
+    <Content Include="images\offer-icon-bg.png" />
+    <Content Include="images\offer-next-arrow.png" />
+    <Content Include="images\offer-previous-arrow.png" />
+    <Content Include="images\offer-previous-arrow1.png" />
+    <Content Include="images\old.png" />
+    <Content Include="images\online-trade.png" />
+    <Content Include="images\opel-zafira.png" />
+    <Content Include="images\oslo-img1.jpg" />
+    <Content Include="images\oslo-img2.jpg" />
+    <Content Include="images\oslo-img3.jpg" />
+    <Content Include="images\oslo-img4.jpg" />
+    <Content Include="images\oslo-img6.png" />
+    <Content Include="images\Oslo.png" />
+    <Content Include="images\oslo_01.png" />
+    <Content Include="images\oulo.jpg" />
+    <Content Include="images\paris-1.png" />
+    <Content Include="images\paris-img1.jpg" />
+    <Content Include="images\paris-img2.jpg" />
+    <Content Include="images\paris-img3.jpg" />
+    <Content Include="images\paris-img4.jpg" />
+    <Content Include="images\paris.jpg" />
+    <Content Include="images\paris.png" />
+    <Content Include="images\partner-banner.jpg" />
+    <Content Include="images\partner-image1.jpg" />
+    <Content Include="images\partner-image2.jpg" />
+    <Content Include="images\partner-image3.jpg" />
+    <Content Include="images\partner-image4.jpg" />
+    <Content Include="images\partner-logo1.jpg" />
+    <Content Include="images\partner-logo10.jpg" />
+    <Content Include="images\partner-logo11.jpg" />
+    <Content Include="images\partner-logo12.jpg" />
+    <Content Include="images\partner-logo2.jpg" />
+    <Content Include="images\partner-logo3.jpg" />
+    <Content Include="images\partner-logo4.jpg" />
+    <Content Include="images\partner-logo5.jpg" />
+    <Content Include="images\partner-logo6.jpg" />
+    <Content Include="images\partner-logo7.jpg" />
+    <Content Include="images\partner-logo8.jpg" />
+    <Content Include="images\partner-logo9.jpg" />
+    <Content Include="images\passenger-icon2.png" />
+    <Content Include="images\passenger.png" />
+    <Content Include="images\phone-icon.png" />
+    <Content Include="images\phone_icon.png" />
+    <Content Include="images\pickup-date.png" />
+    <Content Include="images\pickup-point.png" />
+    <Content Include="images\pickup-time.png" />
+    <Content Include="images\pickup_icon.png" />
+    <Content Include="images\pl3.png" />
+    <Content Include="images\pl4.png" />
+    <Content Include="images\play-store.png" />
+    <Content Include="images\prague.jpg" />
+    <Content Include="images\print-icon.png" />
+    <Content Include="images\print_icon.png" />
+    <Content Include="images\print_icon_white.png" />
+    <Content Include="images\quote.png" />
+    <Content Include="images\recommended-posts.jpg" />
+    <Content Include="images\Review.png" />
+    <Content Include="images\reviews-bg-bottom-shadow.png" />
+    <Content Include="images\reviews-bg-upper-shadow.png" />
+    <Content Include="images\reyadh-img1.jpg" />
+    <Content Include="images\reyadh-img2.jpg" />
+    <Content Include="images\reyadh-img3.jpg" />
+    <Content Include="images\reyadh-img4.jpg" />
+    <Content Include="images\ride.png" />
+    <Content Include="images\right-arrow.png" />
+    <Content Include="images\Riyadh.png" />
+    <Content Include="images\road-line.png" />
+    <Content Include="images\road-line2.png" />
+    <Content Include="images\road-side-bg.png" />
+    <Content Include="images\rome.png" />
+    <Content Include="images\rovaniemi.jpg" />
+    <Content Include="images\Rovaniemi.png" />
+    <Content Include="images\salzburg-img1.jpg" />
+    <Content Include="images\salzburg-img2.jpg" />
+    <Content Include="images\salzburg-img3.jpg" />
+    <Content Include="images\salzburg-img4.jpg" />
+    <Content Include="images\salzburg.jpg" />
+    <Content Include="images\search-black.png" />
+    <Content Include="images\search-white.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\snowboard.png" />
+    <Content Include="images\social-icons.jpg" />
+    <Content Include="images\spoffer1.jpeg" />
+    <Content Include="images\spoffer2.jpeg" />
+    <Content Include="images\spoffer_banner.jpg" />
+    <Content Include="images\Star.png" />
+    <Content Include="images\stockholm-img1.jpg" />
+    <Content Include="images\stockholm-img2.jpg" />
+    <Content Include="images\stockholm-img3.jpg" />
+    <Content Include="images\stockholm-img4.jpg" />
+    <Content Include="images\Stockholm.png" />
+    <Content Include="images\support-icon.png" />
+    <Content Include="images\support.png" />
+    <Content Include="images\switch-icon.png" />
+    <Content Include="images\sydney.jpg" />
+    <Content Include="images\tallin.jpg" />
+    <Content Include="images\tampere.jpg" />
+    <Content Include="images\thankyou-img.png" />
+    <Content Include="images\tick-icon.png" />
+    <Content Include="images\time.png" />
+    <Content Include="images\TripAdvisor-r1.png" />
+    <Content Include="images\Trustpilot.png" />
+    <Content Include="images\turku.jpg" />
+    <Content Include="images\user-colored.png" />
+    <Content Include="images\user.png" />
+    <Content Include="images\vaasu.jpg" />
+    <Content Include="images\vienna-img1.jpg" />
+    <Content Include="images\vienna-img2.jpg" />
+    <Content Include="images\vienna-img3.jpg" />
+    <Content Include="images\vienna-img4.jpg" />
+    <Content Include="images\vienna.jpg" />
+    <Content Include="images\volkswagen-touran.png" />
+    <Content Include="images\voucher.png" />
+    <Content Include="images\whatsapp-chat.png" />
+    <Content Include="images\whatsapp-icon.png" />
+    <Content Include="images\whatsapp_logo.png" />
+    <Content Include="images\white-label.png" />
+    <Content Include="images\work-icon1.png" />
+    <Content Include="images\work-icon2.png" />
+    <Content Include="images\work-icon3.png" />
+    <Content Include="images\workicon_1.png" />
+    <Content Include="images\workicon_2.png" />
+    <Content Include="images\workicon_3.png" />
+    <Content Include="images\workicon_4.png" />
+    <Content Include="images\wtm.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\amsterdam.webp" />
+    <Content Include="images\banner-img.webp" />
+    <Content Include="images\berlin.webp" />
+    <Content Include="images\car-bg1.webp" />
+    <Content Include="images\city-bg.webp" />
+    <Content Include="images\dubai.webp" />
+    <Content Include="images\fleet-car1.webp" />
+    <Content Include="images\fleet-car2.webp" />
+    <Content Include="images\fleet-car3.webp" />
+    <Content Include="images\london.webp" />
+    <Content Include="images\oslo-img5.webp" />
+    <Content Include="images\paris.webp" />
+    <Content Include="images\rome.webp" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57059</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44369/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
